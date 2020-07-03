@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PertanyaanController@index');
+Route::get('/pertanyaan/tambah', 'PertanyaanController@create');
+Route::post('/pertanyaan', 'PertanyaanController@store');
+

@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\PertanyaanModel;
+use App\JawabanModel;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class PertanyaanController extends Controller
+class JawabanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,7 @@ class PertanyaanController extends Controller
      */
     public function index()
     {
-        $questions = DB::table('questions')->get();
-
-        // dd($pertanyaan);
-        return view ('pertanyaan.index', ['questions' => $questions]);
+        //
     }
 
     /**
@@ -28,7 +24,7 @@ class PertanyaanController extends Controller
      */
     public function create()
     {
-        return view ('pertanyaan.tambah');
+        //
     }
 
     /**
@@ -39,23 +35,16 @@ class PertanyaanController extends Controller
      */
     public function store(Request $request)
     {
-        DB::table('questions')->insert([
-            'judul' => $request->judul,
-            'isi' => $request->isi,
-            'created_at' => $request->created,
-            'updated_at' => $request->update
-        ]);
-
-        return redirect('/');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\PertanyaanModel  $pertanyaanModel
+     * @param  \App\JawabanModel  $jawabanModel
      * @return \Illuminate\Http\Response
      */
-    public function show(PertanyaanModel $pertanyaanModel)
+    public function show(JawabanModel $jawabanModel)
     {
         //
     }
@@ -63,10 +52,10 @@ class PertanyaanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\PertanyaanModel  $pertanyaanModel
+     * @param  \App\JawabanModel  $jawabanModel
      * @return \Illuminate\Http\Response
      */
-    public function edit(PertanyaanModel $pertanyaanModel)
+    public function edit(JawabanModel $jawabanModel)
     {
         //
     }
@@ -75,10 +64,10 @@ class PertanyaanController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\PertanyaanModel  $pertanyaanModel
+     * @param  \App\JawabanModel  $jawabanModel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PertanyaanModel $pertanyaanModel)
+    public function update(Request $request, JawabanModel $jawabanModel)
     {
         //
     }
@@ -86,10 +75,10 @@ class PertanyaanController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\PertanyaanModel  $pertanyaanModel
+     * @param  \App\JawabanModel  $jawabanModel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PertanyaanModel $pertanyaanModel)
+    public function destroy(JawabanModel $jawabanModel)
     {
         //
     }

@@ -5,7 +5,7 @@
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">App Quis</span>
     </a> --}}
 
     <!-- Sidebar -->
@@ -16,7 +16,7 @@
           <img src="{{ asset('template/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Agung Permana</a>
+          <a href="#" class="d-block">Hai, Agung Permana</a>
         </div>
       </div>
 
@@ -29,7 +29,7 @@
           <a href="{{ url('/') }}" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Pertanyaan
               </p>
             </a>
           </li>
@@ -38,7 +38,7 @@
             <a href="{{ url('data-tables') }}" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Data Tables
+                Jawaban
               </p>
             </a>
           </li>
