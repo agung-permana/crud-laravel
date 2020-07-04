@@ -15,7 +15,9 @@ class CreateAnswersTable extends Migration
     {
         Schema::create('answers', function (Blueprint $table) {
             $table->id();
-            $table->text('isi');
+            // $table->bigInteger('questions_id')->unsigned();
+            $table->foreignId('questions_id')->constrained('questions')->onDelete('cascade')->onUpdate('cascade');
+            $table->text('isi_jawaban');
             $table->timestamps();
         });
     }
