@@ -17,7 +17,7 @@ class PertanyaanController extends Controller
     {
         $questions = DB::table('questions')->get();
 
-        // dd($pertanyaan);
+        // dd($questions);
         return view ('pertanyaan.index', ['questions' => $questions]);
     }
 
@@ -41,7 +41,7 @@ class PertanyaanController extends Controller
     {
         DB::table('questions')->insert([
             'judul' => $request->judul,
-            'isi' => $request->isi,
+            'isi_pertanyaan' => $request->isi,
             'created_at' => $request->created,
             'updated_at' => $request->update
         ]);
